@@ -1,0 +1,278 @@
+{
+  "headline": {
+    "bottlenecks": {
+      "phm": "detector",
+      "rag": "generator",
+      "research": "synthesizer"
+    },
+    "greedy_optimal_rate": 1.0,
+    "masking_control_false_positives": 0,
+    "masking_precision": 1.0,
+    "masking_recall": 1.0,
+    "max_accounting_error": 0.0,
+    "max_gain_error": 1.6653345369377348e-16,
+    "mean_cumulative_order_gap": 0.0,
+    "mean_score_gap_after_two_fixes": 0.0,
+    "random_budget_greedy_gain_optimal_rate": 0.92,
+    "random_budget_greedy_ratio_optimal_rate": 0.78,
+    "random_budget_max_gain_gap": 0.09008011244799308,
+    "random_budget_max_ratio_gap": 0.1494981694353652,
+    "random_budget_mean_gain_gap": 0.005030834256474857,
+    "random_budget_mean_ratio_gap": 0.011979179090130236,
+    "random_full_order_agreement_rate": 1.0,
+    "random_greedy_optimal_rate": 1.0,
+    "random_max_cumulative_order_gap": 4.440892098500626e-16,
+    "random_mean_cumulative_order_gap": -1.7763568394002505e-17,
+    "random_mean_score_gap_after_two_fixes": 0.0
+  },
+  "masking": {
+    "control_false_positives": 0,
+    "expected": [
+      "diagnoser masked by detector",
+      "reporter masked by detector",
+      "sensor masked by detector"
+    ],
+    "found": [
+      "diagnoser masked by detector",
+      "reporter masked by detector",
+      "sensor masked by detector"
+    ],
+    "n_found": 3,
+    "precision": 1.0,
+    "recall": 1.0,
+    "system": "phm_masked"
+  },
+  "n_cases": 200,
+  "random_systems": {
+    "budget": 6.0,
+    "budget_greedy_gain_optimal_rate": 0.92,
+    "budget_greedy_ratio_optimal_rate": 0.78,
+    "budget_max_gain_gap": 0.09008011244799308,
+    "budget_max_ratio_gap": 0.1494981694353652,
+    "budget_mean_gain_gap": 0.005030834256474857,
+    "budget_mean_ratio_gap": 0.011979179090130236,
+    "full_order_agreement_rate": 1.0,
+    "greedy_optimal_rate": 1.0,
+    "max_cumulative_order_gap": 4.440892098500626e-16,
+    "mean_cumulative_order_gap": -1.7763568394002505e-17,
+    "mean_score_gap_after_two_fixes": 0.0,
+    "n_systems": 50
+  },
+  "seed": 7,
+  "systems": {
+    "phm": {
+      "accounting_error": 0.0,
+      "baseline": 0.5557333096800634,
+      "bottleneck": "detector",
+      "budget": 6.0,
+      "budget_greedy_gain_gap": 0.0,
+      "budget_greedy_gain_is_optimal": true,
+      "budget_greedy_gain_score": 0.802277917506903,
+      "budget_greedy_gain_subset": [
+        "detector",
+        "reporter"
+      ],
+      "budget_greedy_ratio_gap": 0.0,
+      "budget_greedy_ratio_is_optimal": true,
+      "budget_greedy_ratio_score": 0.802277917506903,
+      "budget_greedy_ratio_subset": [
+        "reporter",
+        "detector"
+      ],
+      "budget_optimal_cost": 5.0,
+      "budget_optimal_score": 0.802277917506903,
+      "budget_optimal_subset": [
+        "detector",
+        "reporter"
+      ],
+      "ceiling": 0.4442666903199366,
+      "ceiling_shares": {
+        "detector": 0.3731148584430534,
+        "diagnoser": 0.21319528071427238,
+        "reporter": 0.1402787465554765,
+        "sensor": 0.07995385941895343
+      },
+      "cumulative_order_gap": 0.0,
+      "full_order_agreement": true,
+      "gains": {
+        "detector": 0.165762503269687,
+        "diagnoser": 0.09471556175475959,
+        "reporter": 0.06232117445443075,
+        "sensor": 0.03552083650236393
+      },
+      "greedy_full_order": [
+        "detector",
+        "diagnoser",
+        "reporter",
+        "sensor"
+      ],
+      "greedy_is_optimal": true,
+      "greedy_order": [
+        "detector",
+        "diagnoser",
+        "reporter",
+        "sensor"
+      ],
+      "greedy_steps_to_target": 4,
+      "interaction_residual": 0.19345725486824428,
+      "max_gain_error": 1.6653345369377348e-16,
+      "n_cases": 200,
+      "optimal_set": [
+        "detector",
+        "diagnoser",
+        "reporter",
+        "sensor"
+      ],
+      "optimal_size": 4,
+      "pairwise_subadditive": 0,
+      "pairwise_superadditive": 6,
+      "pairwise_total": 6,
+      "score_gap_after_two_fixes": 0.0,
+      "system": "phm"
+    },
+    "rag": {
+      "accounting_error": 0.0,
+      "baseline": 0.5158564140195653,
+      "bottleneck": "generator",
+      "budget": 6.0,
+      "budget_greedy_gain_gap": 0.06097594335716028,
+      "budget_greedy_gain_is_optimal": false,
+      "budget_greedy_gain_score": 0.7263143464837932,
+      "budget_greedy_gain_subset": [
+        "generator",
+        "reranker"
+      ],
+      "budget_greedy_ratio_gap": 0.0,
+      "budget_greedy_ratio_is_optimal": true,
+      "budget_greedy_ratio_score": 0.7872902898409535,
+      "budget_greedy_ratio_subset": [
+        "reranker",
+        "verifier",
+        "retriever"
+      ],
+      "budget_optimal_cost": 6.0,
+      "budget_optimal_score": 0.7872902898409535,
+      "budget_optimal_subset": [
+        "reranker",
+        "retriever",
+        "verifier"
+      ],
+      "ceiling": 0.4841435859804347,
+      "ceiling_shares": {
+        "generator": 0.286933509341114,
+        "reranker": 0.11596033631456873,
+        "retriever": 0.2161399951968867,
+        "verifier": 0.15359919264652064
+      },
+      "cumulative_order_gap": 0.0,
+      "full_order_agreement": true,
+      "gains": {
+        "generator": 0.1389170181503575,
+        "reranker": 0.056141453054832535,
+        "retriever": 0.10464279234841467,
+        "verifier": 0.07436406393158612
+      },
+      "greedy_full_order": [
+        "generator",
+        "retriever",
+        "verifier",
+        "reranker"
+      ],
+      "greedy_is_optimal": true,
+      "greedy_order": [
+        "generator",
+        "retriever",
+        "verifier",
+        "reranker"
+      ],
+      "greedy_steps_to_target": 4,
+      "interaction_residual": 0.22736696650090993,
+      "max_gain_error": 1.3877787807814457e-16,
+      "n_cases": 200,
+      "optimal_set": [
+        "generator",
+        "reranker",
+        "retriever",
+        "verifier"
+      ],
+      "optimal_size": 4,
+      "pairwise_subadditive": 0,
+      "pairwise_superadditive": 6,
+      "pairwise_total": 6,
+      "score_gap_after_two_fixes": 0.0,
+      "system": "rag"
+    },
+    "research": {
+      "accounting_error": 0.0,
+      "baseline": 0.5544978701341098,
+      "bottleneck": "synthesizer",
+      "budget": 6.0,
+      "budget_greedy_gain_gap": 0.0,
+      "budget_greedy_gain_is_optimal": true,
+      "budget_greedy_gain_score": 0.8149301457991952,
+      "budget_greedy_gain_subset": [
+        "synthesizer",
+        "planner"
+      ],
+      "budget_greedy_ratio_gap": 0.014345499073301293,
+      "budget_greedy_ratio_is_optimal": false,
+      "budget_greedy_ratio_score": 0.8005846467258939,
+      "budget_greedy_ratio_subset": [
+        "planner",
+        "critic",
+        "tool_caller"
+      ],
+      "budget_optimal_cost": 6.0,
+      "budget_optimal_score": 0.8149301457991952,
+      "budget_optimal_subset": [
+        "planner",
+        "synthesizer"
+      ],
+      "ceiling": 0.4455021298658902,
+      "ceiling_shares": {
+        "critic": 0.10178901026095903,
+        "planner": 0.22047126987290333,
+        "synthesizer": 0.30901544948592546,
+        "tool_caller": 0.16623811056095064
+      },
+      "cumulative_order_gap": 0.0,
+      "full_order_agreement": true,
+      "gains": {
+        "critic": 0.0453472208681982,
+        "planner": 0.09822042030261591,
+        "synthesizer": 0.1376670409074452,
+        "tool_caller": 0.07405943231978485
+      },
+      "greedy_full_order": [
+        "synthesizer",
+        "planner",
+        "tool_caller",
+        "critic"
+      ],
+      "greedy_is_optimal": true,
+      "greedy_order": [
+        "synthesizer",
+        "planner",
+        "tool_caller",
+        "critic"
+      ],
+      "greedy_steps_to_target": 4,
+      "interaction_residual": 0.20248615981926155,
+      "max_gain_error": 6.245004513516506e-17,
+      "n_cases": 200,
+      "optimal_set": [
+        "critic",
+        "planner",
+        "synthesizer",
+        "tool_caller"
+      ],
+      "optimal_size": 4,
+      "pairwise_subadditive": 0,
+      "pairwise_superadditive": 6,
+      "pairwise_total": 6,
+      "score_gap_after_two_fixes": 0.0,
+      "system": "research"
+    }
+  },
+  "target": 0.95
+}

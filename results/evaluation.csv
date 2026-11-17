@@ -1,0 +1,4 @@
+system,baseline,ceiling,bottleneck,greedy_steps_to_target,optimal_size,greedy_is_optimal,cumulative_order_gap,max_gain_error
+rag,0.5159,0.4841,generator,4,4,True,0.0000,0.000000
+research,0.5545,0.4455,synthesizer,4,4,True,0.0000,0.000000
+phm,0.5557,0.4443,detector,4,4,True,0.0000,0.000000
