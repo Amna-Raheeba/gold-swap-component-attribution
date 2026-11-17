@@ -1,0 +1,122 @@
+{
+  "phm": {
+    "components": [
+      {
+        "cost": 2.0,
+        "description": "Telemetry ingestion and cleaning.",
+        "name": "sensor",
+        "quality": 0.9
+      },
+      {
+        "cost": 4.0,
+        "description": "Anomaly detection on the sensor stream.",
+        "name": "detector",
+        "quality": 0.65
+      },
+      {
+        "cost": 3.0,
+        "description": "Root-cause diagnosis of detected anomalies.",
+        "name": "diagnoser",
+        "quality": 0.78
+      },
+      {
+        "cost": 1.0,
+        "description": "Maintenance report and alert ranking.",
+        "name": "reporter",
+        "quality": 0.84
+      }
+    ],
+    "description": "Predictive-maintenance monitoring pipeline: sense, detect, diagnose, report.",
+    "name": "phm"
+  },
+  "phm_masked": {
+    "components": [
+      {
+        "cost": 2.0,
+        "description": "Telemetry ingestion and cleaning.",
+        "name": "sensor",
+        "quality": 0.9
+      },
+      {
+        "cost": 4.0,
+        "description": "Anomaly detection, nearly dead.",
+        "name": "detector",
+        "quality": 0.05
+      },
+      {
+        "cost": 3.0,
+        "description": "Root-cause diagnosis of detected anomalies.",
+        "name": "diagnoser",
+        "quality": 0.78
+      },
+      {
+        "cost": 1.0,
+        "description": "Maintenance report and alert ranking.",
+        "name": "reporter",
+        "quality": 0.84
+      }
+    ],
+    "description": "PHM pipeline with a near-dead detector (masking demo only).",
+    "name": "phm_masked"
+  },
+  "rag": {
+    "components": [
+      {
+        "cost": 3.0,
+        "description": "BM25 + vector hybrid retrieval over the corpus.",
+        "name": "retriever",
+        "quality": 0.72
+      },
+      {
+        "cost": 1.0,
+        "description": "Cross-encoder reranking of the top candidates.",
+        "name": "reranker",
+        "quality": 0.85
+      },
+      {
+        "cost": 5.0,
+        "description": "Answer generation from the retrieved passages.",
+        "name": "generator",
+        "quality": 0.68
+      },
+      {
+        "cost": 2.0,
+        "description": "Citation and consistency check on the answer.",
+        "name": "verifier",
+        "quality": 0.8
+      }
+    ],
+    "description": "RAG question-answering pipeline: retrieve, rerank, generate, verify.",
+    "name": "rag"
+  },
+  "research": {
+    "components": [
+      {
+        "cost": 2.0,
+        "description": "Decomposes the question into sub-tasks.",
+        "name": "planner",
+        "quality": 0.75
+      },
+      {
+        "cost": 3.0,
+        "description": "Executes searches and reads sources.",
+        "name": "tool_caller",
+        "quality": 0.82
+      },
+      {
+        "cost": 4.0,
+        "description": "Drafts the report from tool outputs.",
+        "name": "synthesizer",
+        "quality": 0.7
+      },
+      {
+        "cost": 1.0,
+        "description": "Checks the draft for unsupported claims.",
+        "name": "critic",
+        "quality": 0.88
+      }
+    ],
+    "description": "Agentic research pipeline: plan, call tools, synthesise, criticise.",
+    "name": "research"
+  }
+}
